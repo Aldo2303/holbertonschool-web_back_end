@@ -13,10 +13,8 @@ async def measure_runtime() -> float:
     Return: execution time
     """
     start = time.time()
-    await asyncio.gather(
-        async_comprehension(), async_comprehension(),
-        async_comprehension(), async_comprehension()
-        )
+    await asyncio.gather(async_comprehension(), async_comprehension(),
+                         async_comprehension(), async_comprehension())
     end = time.time()
     execution_time = end - start
     return (execution_time)
