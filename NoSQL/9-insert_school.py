@@ -4,7 +4,6 @@ function that inserts a new document in a collection based on kwargs
 Method: def insert_school(mongo_collection, **kwargs)
 Return: new_id
 """
-import pymongo
 
 
 def insert_school(mongo_collection, **kwargs):
